@@ -7,14 +7,14 @@ import LeafIcon from "./LeafIcon";
 const Resort = () => {
   return (
     <section className="bg-[#E0D8CF] relative pt-[220px]">
-      <Image
-        src={Biker}
-        alt="Biker"
-        width={884}
-        height={520}
-        className="w-[800px] h-auto absolute top-[-320px] left-0 z-0"
-        priority
-      />
+<Image
+  src={Biker}
+  alt="Biker"
+  width={884}
+  height={520}
+  className="biker-ride absolute top-[-320px] left-0 z-0 w-[800px] h-auto"
+  priority
+/>
       <div className="flex items-start justify-end gap-7 max-w-[80%] absolute right-[10%] top-[-430px] h-full">
         {/* Amenities card */}
         <div className=" bg-[#F1ECE4] rounded-[32px] shadow-lg flex flex-col items-center justify-center text-center p-[60px] mt-[40%]">
@@ -70,13 +70,7 @@ const Resort = () => {
           backgroundPosition: "center top",
           backgroundRepeat: "no-repeat",
         }}>
-        {/* <Image
-          src={ResortBgImg}
-          alt="Resort"
-          width={1080}
-          height={720}
-          className="w-full h-auto rounded-lg"
-        /> */}
+        
       </div>
     </section>
   );

@@ -58,3 +58,33 @@ body {
     }
   }
 }
+@keyframes bikerRide {
+  0% {
+    transform: translate3d(0, 0, 0) rotate(0deg);
+  }
+  20% {
+    transform: translate3d(0, -2px, 0) rotate(-0.25deg);
+  }
+  40% {
+    transform: translate3d(0, 1px, 0) rotate(0.2deg);
+  }
+  60% {
+    transform: translate3d(0, -1px, 0) rotate(-0.15deg);
+  }
+  80% {
+    transform: translate3d(0, 2px, 0) rotate(0.15deg);
+  }
+  100% {
+    transform: translate3d(0, 0, 0) rotate(0deg);
+  }
+}
+
+.biker-ride {
+   animation: bikerRide 2.5s ease-in-out infinite;
+  transform-origin: center bottom;
+  will-change: transform;
+}
+
+/* .biker-ride {
+  animation: bikerRide 2.5s ease-in-out infinite;
+} */
